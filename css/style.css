@@ -231,3 +231,43 @@ h3 {
         margin-left: 2em;
     }
 }
+
+
+/* Portfolio Section */
+
+.my-portfolio {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__subtitle--portfolio {
+    color: var(--clr-accent);
+    font-weight:bold;
+    margin-bottom: 2em;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.portfolio__item {
+    background-color: var(--clr-dark);
+    overflow: hidden;
+}
+
+.portfolio__img {
+    height: 300px;
+    width: 800px;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+
+}
+
+.portfolio__img:hover {
+    transform: scale(1.2);
+    opacity: .75;
+}
