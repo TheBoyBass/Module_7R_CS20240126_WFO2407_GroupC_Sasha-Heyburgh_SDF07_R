@@ -271,3 +271,41 @@ h3 {
     transform: scale(1.2);
     opacity: .75;
 }
+
+/* Footer Section */
+
+footer {
+    background: #111;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a {
+    color: var(--clr-accent);
+    text-decoration: none;
+}
+
+.footer__link {
+    font-weight: bold;
+}
+
+.footer__link:hover,
+.social-list__link:hover{
+    opacity: 0.8;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.social-list {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+}
+
+.social__logo {
+    width: 40px;
+    margin-right: 0.5em;
+}
