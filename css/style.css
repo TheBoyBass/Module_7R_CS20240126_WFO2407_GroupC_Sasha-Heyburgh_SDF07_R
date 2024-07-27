@@ -137,3 +137,28 @@ h3 {
         width: calc(100% + 1.5em);
     }
 }
+
+/* My Services Section */
+
+.my-services {
+    background-color: var(--clr-dark);
+    background-image: url(../images/my-services.jpg);
+    background-size: cover;
+    color: var(--clr-light);
+    text-align: center;
+    background-blend-mode: multiply;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    border-bottom: 1px solid var(--clr-accent);
+    padding-bottom: 0.5em;
+}
+
+@media (min-width: 200px) {
+    .services {
+       display: flex;
+       max-width: 1000px;
+       margin: 0 auto;
+    }
+}
