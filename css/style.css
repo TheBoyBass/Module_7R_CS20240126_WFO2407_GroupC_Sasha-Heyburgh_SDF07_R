@@ -35,6 +35,10 @@
 
 /* General Styling */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
@@ -158,6 +162,23 @@ header {
     right: 1em;
     top: 2em;
     z-index: 1000;
+}
+
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .navigator {
+    position: fixed;
+}
+
+.nav-open .hamburger{
+    transform: rotate(.635turn);
+}
+
+.nav-open .hamburger::before{
+    transform: rotate(90deg) translateX(-6px);
 }
 
 .hamburger {
